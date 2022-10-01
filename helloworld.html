@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+
+<!-- 这是表示是否要调用翻译功能 -->
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML</title>
+</head>
+<body>
+
+	<!-- 这个css的意思是body里面的所有的文本都是居中对其的 -->
+	<style>
+		td{
+			text-align: center;
+		}
+		th{
+			text-align: center;
+		}
+		p{
+			text-indent: 2em;
+		}
+	</style>
+
+	<!-- 这些是浏览器默认的样式,不同的浏览器可能会不一样,我们一般自己去指定 -->
+	<h1>这是一级标题</h1>
+	<h2>这是二级标题</h2>
+	<h3>这是三级标题</h3>
+	<h4>这是四级标题</h4>
+	<h5>这是五级标题</h5>
+	<h6>这是六级标题</h6>
+
+	<!-- lorenm + tab 随机生成一段长文本 -->
+	<p>这是一个段落Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Nulla fuga quia quaerat voluptas vitae tempora nisi totam! Tempora facere voluptatem impedit molestiae atque beatae iste neque magni. Ducimus, dolore eveniet.</p>
+	<!-- 同时给很多段落同时构造一段随机的 alt + 光标进行列编辑-->
+	<p>这是一个段落 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident nihil, illum, ullam iste voluptate quas sapiente ipsam labore, aspernatur a explicabo perferendis totam ipsum eos. Repudiandae perspiciatis ex accusamus!</p>
+	<p>这是一个段落 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident nihil, illum, ullam iste voluptate quas sapiente ipsam labore, aspernatur a explicabo perferendis totam ipsum eos. Repudiandae perspiciatis ex accusamus!</p>
+	<p>这是一个段落 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident nihil, illum, ullam iste voluptate quas sapiente ipsam labore, aspernatur a explicabo perferendis totam ipsum eos. Repudiandae perspiciatis ex accusamus!</p>
+	<p>这是一个段落 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident nihil, illum, ullam iste voluptate quas sapiente ipsam labore, aspernatur a explicabo perferendis totam ipsum eos. Repudiandae perspiciatis ex accusamus!</p>
+
+	<p>111111&nbsp;11111111</p>
+	<p>111111&nbsp;&nbsp;&nbsp;11111111</p>
+	<p>111111&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11111111</p>
+	<p>111111&nbsp; &nbsp; &nbsp;11111111</p>
+	<p>111111&nbsp;  &nbsp;  &nbsp;11111111</p>
+	
+	<p>=========================================================================</p>
+	
+	<!-- 格式化标签,用来改变我们显示的样式 -->
+	<strong>加粗第一种</strong> <br>
+	<b>加粗第二种</b>           <br>
+	<em>倾斜第一种</em>         <br>
+	<i>倾斜第二种</i>           <br>  
+	<del>删除线第一种</del>     <br>
+	<s>删除线第二种</s>         <br>
+	<ins>下划线第一种</ins>     <br>
+	<u>下划线第二种</u>         <br>
+
+
+	<!-- html里面的标签简单的可以分为两类
+	1. 块级元素  独占一行
+	2. 行内元素 不独占一行 -->
+
+	
+	<!-- 图片标签 行内元素-->
+	<img src="image/头像001.png" alt="" width="100px">
+	<img src="../头像001.png" alt="" width="100px">
+	<!-- 一般不建议写绝对路径,因为我们的代码要在别人的电脑上运行,我们不知道别人的电脑上的路径情况 -->
+	<img src="C:\Users\JIE\Pictures\海贼王/艾斯.jpeg" alt="" width="100px">
+	<img src="https://n.sinaimg.cn/sinakd2020818s/320/w2048h3072/20200818/2e81-ixvrvsp6938671.jpg" 
+	alt="这是蔡徐坤" title="鸡你太美"
+	width="100px">
+	<!-- 如果图片没有加载出来,就会显示alt中的内容 -->
+	<!-- title表示鼠标放到图片上面的显示 -->
+	
+	<!-- a标签也是一个行内元素 -->
+	<a href="https://ww.sogou.com">这是搜狗的超链接</a>
+	
+	<a href="1.html">跳转到 1.html</a>
+
+	<a href="2.zip">下载 2.zip</a>
+
+	<!-- target 打开一个新的标签页 -->
+	<a href="1.html" target="_blank">新标签页跳转到 1.html</a>
+	<br>
+
+	<!-- 表格标签
+	table -> 表示整个表格
+	tr    -> 表示表格中的一行
+	td    -> 表示表格中的一个单元格
+	th    -> 也是单元格,用来表示表头的单元格,会更粗一点 -->
+	<table border="1px" width="500px" height="200px" cellspacing="0">
+		<tr>
+			<th>姓名</th>
+			<th>性别</th>
+			<th>电话</th>
+		</tr>
+		<tr>
+			<td>张三</td>
+			<td>男性</td>
+			<td>17686459872</td>
+		</tr><tr>
+			<td>李四</td>
+			<td>男性</td>
+			<td>12467862389</td>
+		</tr><tr>
+			<td>王五</td>
+			<td>女性</td>
+			<td>19876453478</td>
+		</tr>
+		</tr><tr>
+			<td>李柳</td>
+			<td>女性</td>
+			<td>11274534781</td>
+		</tr>
+
+		<!-- tr>td*5   tr+tr  tr+p -->
+	</table>
+
+	<p> Lorem ipsum dolor, sit amet coLorem ipsum dolor, sit amet 
+		consectetur adipisicing elit. Vel dLorem ipsum dolor, 
+		sit amet consectetur adipisicing elit. Vel dLorem ipsum 
+		dolor, sit amet consectetur adipisicing elit. Vel dLorem 
+		ipsum dolor, sit amet consectetur adipisicing elit. Vel 
+		dLorem ipsum dolor, sit amet consectetur adipisicing elit. 
+		Vel dLorem ipsum dolor, sit amet consectetur adipisicing elit
+		Vel dLorem ipsum dolor, sit amet consectetur 
+		adipisicing elit. Vel dLorem ipsum dolor, sit amet consectetu
+		r adipisicing elit. Vel dLorem ipsum dolor, sit amet consectetu
+		r adipisicing elit. Vel dLorem ipsum dolor, sit amet consectetur
+		adipisicing elit. Vel dLorem ipsum dolor, sit amet consectetur 
+		adipisicing elit. Vel dLorem ipsum dolor, sit amet consectetur
+		adipisicing elit. Vel dLorem ipsum dolor, sit amet consectetu
+		r adipisicing elit. Vel dLorem ipsum dolor, sit amet consectetur 
+		adipisicing elit. Vel dnsectetur adipisicing elit. Vel distinctio
+		enim harum eos quaerat molestias magni rem cum facilis quam 
+		expedita omnis vitae voluptate commodi laudantium, explicabo 
+		quod voluptatum quidem?</p>
+
+
+
+	<!-- 有序列表 -->
+	<ol>
+		<li>孙悟空</li>
+		<li>及时雨</li>
+		<li>小王子</li>
+		<li>局外人</li>
+	</ol>
+
+	<!-- 无序列表 -->
+	<ul>
+		<li>孙悟空</li>
+		<li>及时雨</li>
+		<li>小王子</li>
+		<li>局外人</li>
+	</ul>
+
+
+	<!-- 表单标签 在页面上搜索信息并且提交 前后端交互 -->
+	<form action=""></form>
+
+
+	<!-- input 标签 -->
+	<h4>单行文本框</h4>
+	<input type="text">    
+	<br>
+	<h4>密码输入框</h4>
+	<input type="password">
+	<br>
+	<h4>单选框</h4>
+	<input type="radio" name="gender" id="male"><label for="male">男性</label>
+	<input type="radio" name="gender" id="female" checked="checked"><label for="female">女性</label>
+	<br>
+	<!-- 复选框 -->
+	<h4>复选框</h4>
+	<input type="checkbox">一个女朋友
+	<input type="checkbox">两个女朋友
+	<input type="checkbox" checked="checked">三个女朋友
+
+	<br>
+	<h4>按钮</h4>
+	<input type="button" value="这是一个按钮">
+	<br>
+
+	<!-- 文件选择器 -->
+	<h4>文件选择器</h4>
+	<input type="file">
+
+
+	<!-- 下拉菜单 -->
+	<h4>下拉菜单</h4>
+	<select>
+		<option>北京</option>
+		<option>上海</option>
+		<option>南京</option>
+		<option>深圳</option>
+		<option selected="selected">广州</option>
+	</select>
+
+	<br>
+	<h4>多行编辑框</h4>
+	<textarea cols="30" rows="10">
+
+	</textarea>
+	<br>
+
+	<h4>无语义标签</h4>
+	<div>1111111111111111</div>
+	<div>2222222222222222</div>
+	<div>3333333333333333</div>
+
+
+	<span>111111111111111111</span>
+	<span>222222222222222222</span>
+	<span>333333333333333333</span>
+
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>  
